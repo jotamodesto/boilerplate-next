@@ -5,7 +5,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint --max-warnings=0",
+    "lint": "next lint",
     "lint:css": "stylelint 'src/**/*.{ts,tsx}' --max-warnings=0",
     "prepare": "husky install",
     "test": "jest",
@@ -14,8 +14,8 @@
     "build-storybook": "build-storybook"
   },
   "lint-staged": {
-    "src/**/*.ts(x)": [
-      "yarn lint --fix",
+    "**/*.ts(x)": [
+      "yarn eslint --max-warnings=0 --fix",
       "yarn lint:css --fix",
       "yarn test --findRelatedTests --bail"
     ]

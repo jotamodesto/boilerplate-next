@@ -4,7 +4,7 @@ import Main from '.'
 
 describe('<Main />', () => {
   it('should render the heading', () => {
-    const { container } = render(<Main />)
+    const { container } = render(<Main title="Boilerplate setup" />)
 
     expect(
       screen.getByRole('heading', { name: /boilerplate setup/i })

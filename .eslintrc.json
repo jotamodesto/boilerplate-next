@@ -2,16 +2,16 @@
   "extends": [
     "airbnb-base",
     "airbnb-typescript/base",
-    "next/core-web-vitals",
     "plugin:@typescript-eslint/recommended",
-    "plugin:@typescript-eslint/eslint-recommended",
+    "plugin:@typescript-eslint/recommended-requiring-type-checking",
+    "next/core-web-vitals",
     "plugin:prettier/recommended"
   ],
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
-    "ecmaFeatures": {"jsx": true},
-    "project": "./tsconfig.json"
+    "project": ["./tsconfig.json"]
   },
+  "plugins": ["@typescript-eslint"],
   "rules": {
     "import/prefer-default-export": "off"
   }

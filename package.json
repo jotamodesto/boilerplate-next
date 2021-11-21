@@ -13,13 +13,6 @@
     "storybook": "start-storybook -s ./public -p 6006",
     "build-storybook": "build-storybook"
   },
-  "lint-staged": {
-    "**/*.ts?(x)": [
-      "yarn lint . --fix",
-      "yarn lint:css --fix",
-      "yarn test --findRelatedTests --bail"
-    ]
-  },
   "dependencies": {
     "@emotion/react": "^11.6.0",
     "@emotion/styled": "^11.6.0",

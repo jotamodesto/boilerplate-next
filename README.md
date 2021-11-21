@@ -9,6 +9,7 @@ This boilerplate uses the following dependencies
 - [Eslint](https://eslint.org)
 - [Stylelint](https://stylelint.io)
 - [Typescript](https://www.typescriptlang.org)
+- [Plop](https://plopjs.com)
 
 ## How to use
 
@@ -20,6 +21,26 @@ npx create-next-app -e https://github.com/jotamodesto/boilerplate-next
 yarn create next-app -e https://github.com/jotamodesto/boilerplate-next
 ```
 Once the project is created you can delete the ".github" folder
+
+## Create a component
+
+The boilerplate has plop configured to genearate templates of components
+
+Eg: using the command
+```bash
+npm run generate button
+# or
+yarn generate button
+```
+Will create the button component structure in the 'components' folder
+```
+Button
+  index.tsx
+  button.stories.tsx
+  button.test.tsx
+  styles.ts
+```
+
 
 ## Learn More
 
